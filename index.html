@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Tip Calculator</title>
+    <script src="./app.js" defer></script>
 </head>
 
 <body>
@@ -23,11 +24,11 @@
                 </div>
                 <div class="text">Select Tip %</div>
                 <div class="buttons">
-                    <button onclick="calculate('5')">5%</button>
-                    <button onclick="calculate('10')">10%</button>
-                    <button onclick="calculate('15')">15%</button>
-                    <button onclick="calculate('25')">25%</button>
-                    <button onclick="calculate('50')">50%</button>
+                    <button class = "percentage-button" onclick="calculate('5')">5%</button>
+                    <button class = "percentage-button" onclick="calculate('10')">10%</button>
+                    <button class = "percentage-button" onclick="calculate('15')">15%</button>
+                    <button class = "percentage-button" onclick="calculate('25')">25%</button>
+                    <button class = "percentage-button" onclick="calculate('50')">50%</button>
                     <input type="text" name="custom" id="custom" placeholder="CUSTOM" onchange="custom()">
                     <!-- <button id="custom">Custom</button> -->
                 </div>
@@ -53,8 +54,9 @@
         </div>
     </div>
 
+    <button id="myButton">Click me</button>
 
-    <script src="./app.js"></script>
+    <!-- <script src="app.js"></script> -->
 </body>
 
 </html>
